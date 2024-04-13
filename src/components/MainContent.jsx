@@ -80,7 +80,7 @@ function MainContent() {
 
   // Function to handle Pass button click
   const handleRejectionButtonClick = () => {
-    if (size && operation && checker && style && username) {
+    if (size && operation && checker && style && user) {
       axios
         .post("http://localhost:8080/api/v1/user/reject", {
           size,
@@ -128,7 +128,7 @@ function MainContent() {
   };
 
   const handleReworkButtonClick = () => {
-    if (size && operation && checker && style && username) {
+    if (size && operation && checker && style && user) {
       axios
         .post("http://localhost:8080/api/v1/user/rework", {
           size,
